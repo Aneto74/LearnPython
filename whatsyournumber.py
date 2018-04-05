@@ -21,18 +21,7 @@ comp_number = ""
 counts = 0
 
 while comp_number != my_number:
-    # 100 - 1 + 1 = 100 / 2 = 50
-    # 49 - 1 + 1 = 49 / 2 = 24
-    # 49 - 25 + 25 = 23 / 2 = 
-
-    # 100 - 1 + 1 = 100 / 2 = 50
-    # 100 - 50 + 1 = 51 / 2 = 26
-    # 51 - 25
     comp_number = int(((max_number - min_number + 1) / 2) + min_number)
-    # average_number_high = int((((max_number - min_number + 1) / 2) * 0.66) + min_number)
-    # average_number_low = int((((max_number - min_number + 1) / 2) * 0.33) + min_number)
-    # comp_number = random.choice([average_number_low, average_number_high])
-    # comp_number = average_number
     print('Компьютер: «Может это число', comp_number, '?»')
     counts += 1
     if comp_number < my_number:
