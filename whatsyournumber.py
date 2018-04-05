@@ -4,7 +4,7 @@
 # Версия 1.3 — Теперь можно загадывать от 1 до 100 с проверкой
 import random
 
-max_number = 1000000000
+max_number = 100
 min_number = 1
 
 print('Тебе предоставляется возможность загадать число с',
@@ -14,7 +14,7 @@ print('А я его отгадаю!')
 my_number = int(input('Загадай число:'))
 
 while (my_number > max_number or my_number < min_number):
-    print('Загадать число нужно с 1 до 100 включительно')
+    print('Загадать число нужно с {} до {} включительно'.format(min_number, max_number))
     my_number = int(input('Загадай число заново:'))
 
 comp_number = ""
