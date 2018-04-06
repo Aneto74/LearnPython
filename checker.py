@@ -1,7 +1,15 @@
 import requests
+"""
+Программа, которая чекает какой ответ выдает сервер.
+Это первая версия-заготовка, которую я хочу потом
+использовать на каком-то живом проекте.
 
-res = requests.get('http://aneto.ru/')
-res2 = requests.get('http://aneto.ru/3498832940234')
+1. Сделать таймаут.
+2. Сделать ввод данных из .csv и вывод в csv.
+3. Первая колонка в файле url. Вторая — ответ сервера.
+"""
+url = requests.get('http://aneto.ru/')
+url2 = requests.get('http://aneto.ru/3498832940234')
 
-print(res.status_code)
-print(res2.status_code)
+print(url.status_code)
+print(url2.status_code)
