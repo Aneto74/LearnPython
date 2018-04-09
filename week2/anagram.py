@@ -30,7 +30,7 @@ while correct != guess:
     points += badchoice
     randletter = random.randrange(len(correct))
     letter = correct[randletter]
-    print("У этого слова {} буква «{}».".format(randletter, letter))
+    print("У этого слова {} буква «{}».".format(randletter + 1, letter))
     guess = input("\nПопробуйте снова: ")
 
 points += rightchoice
